@@ -200,6 +200,42 @@
           </tr>
         </tbody>
       </table>
+      <!-- Checker 审核情况 -->
+      <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--border)">
+        <div style="font-size:13px;font-weight:700;color:var(--gray);margin-bottom:14px;text-transform:uppercase;letter-spacing:.5px">Checker 审核情况 <span style="font-size:11px;color:var(--red);font-weight:400;letter-spacing:0;text-transform:none">（9月10日起）</span></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+          <div style="border-radius:10px;overflow:hidden;border:1px solid #c7d2fe">
+            <div style="background:linear-gradient(135deg,#4f46e5,#6366f1);padding:8px 14px">
+              <span style="font-size:11px;font-weight:700;color:#fff;letter-spacing:.6px">TM CHECKER</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;background:#f5f3ff">
+              <div style="padding:12px 14px;text-align:center;border-right:1px solid #c7d2fe">
+                <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">已审核</div>
+                <div style="font-size:24px;font-weight:800;color:#4f46e5">517</div>
+              </div>
+              <div style="padding:12px 14px;text-align:center">
+                <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">待审核</div>
+                <div style="font-size:24px;font-weight:800;color:var(--yellow)">1,986</div>
+              </div>
+            </div>
+          </div>
+          <div style="border-radius:10px;overflow:hidden;border:1px solid #bfdbfe">
+            <div style="background:linear-gradient(135deg,#1a56db,#3b82f6);padding:8px 14px">
+              <span style="font-size:11px;font-weight:700;color:#fff;letter-spacing:.6px">ANTI-FRAUD CHECKER</span>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;background:#eff6ff">
+              <div style="padding:12px 14px;text-align:center;border-right:1px solid #bfdbfe">
+                <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">已审核</div>
+                <div style="font-size:24px;font-weight:800;color:#4f46e5">533</div>
+              </div>
+              <div style="padding:12px 14px;text-align:center">
+                <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">待审核</div>
+                <div style="font-size:24px;font-weight:800;color:var(--yellow)">149</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <!-- 走势图 -->
     <div class="card" style="margin-bottom:20px">
@@ -215,42 +251,6 @@
     <div class="card" style="margin-bottom:20px">
       <div class="card-title">Anti-Fraud 新增量周度走势及月度降幅对比（6月–9月）</div>
       <div class="chart-box" style="height:280px"><canvas id="c7"></canvas></div>
-    </div>
-    <!-- Checker -->
-    <div class="card" style="margin-bottom:20px">
-      <div class="card-title">Checker 审核情况 <span style="font-size:11px;color:var(--red);font-weight:400;letter-spacing:0">（9月10日起）</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:4px">
-        <div style="border-radius:10px;overflow:hidden;border:1px solid #c7d2fe">
-          <div style="background:linear-gradient(135deg,#4f46e5,#6366f1);padding:8px 14px">
-            <span style="font-size:11px;font-weight:700;color:#fff;letter-spacing:.6px">TM CHECKER</span>
-          </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;background:#f5f3ff">
-            <div style="padding:12px 14px;text-align:center;border-right:1px solid #c7d2fe">
-              <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">已审核</div>
-              <div style="font-size:24px;font-weight:800;color:#4f46e5">517</div>
-            </div>
-            <div style="padding:12px 14px;text-align:center">
-              <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">待审核</div>
-              <div style="font-size:24px;font-weight:800;color:var(--yellow)">1,986</div>
-            </div>
-          </div>
-        </div>
-        <div style="border-radius:10px;overflow:hidden;border:1px solid #bfdbfe">
-          <div style="background:linear-gradient(135deg,#1a56db,#3b82f6);padding:8px 14px">
-            <span style="font-size:11px;font-weight:700;color:#fff;letter-spacing:.6px">ANTI-FRAUD CHECKER</span>
-          </div>
-          <div style="display:grid;grid-template-columns:1fr 1fr;background:#eff6ff">
-            <div style="padding:12px 14px;text-align:center;border-right:1px solid #bfdbfe">
-              <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">已审核</div>
-              <div style="font-size:24px;font-weight:800;color:#4f46e5">533</div>
-            </div>
-            <div style="padding:12px 14px;text-align:center">
-              <div style="font-size:10px;color:var(--gray);font-weight:600;margin-bottom:4px">待审核</div>
-              <div style="font-size:24px;font-weight:800;color:var(--yellow)">149</div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
   <!-- S2 日清率 -->
@@ -506,6 +506,17 @@
         </table>
         <div class="chart-box" style="height:160px"><canvas id="c5"></canvas></div>
       </div>
+    </div>
+    <!-- 9月积压总结 -->
+    <div class="recommend-box" style="margin-top:20px">
+      <div class="r-title">整体概览</div>
+      <div class="r-row">本月待处理积压总量 <strong>7,369 单</strong>（AF 2,075 · TM 5,294），较上月（7,763 单）<strong style="color:var(--green)">下降 394 单（-5.1%）</strong>，整体积压压力持续缓解。</div>
+      <div class="r-title" style="margin-top:14px">Anti-Fraud 积压结构</div>
+      <div class="r-row">AF 积压合计 2,075 单，<strong>无 70 天以上积压</strong>，60–69 天仅 100 单（4.8%），积压集中在 50 天以内（70.2%），结构健康，风险可控。</div>
+      <div class="r-title" style="margin-top:14px">TM Alerts 积压结构</div>
+      <div class="r-row">TM 积压合计 5,294 单，其中 <strong style="color:var(--red)">70 天以上 479 单（9.0%）</strong>、60–69 天 794 单（15.0%）为高风险积压，需持续关注；0–39 天 2,690 单（50.8%）占主体，新增积压消化正常。</div>
+      <div class="r-title" style="margin-top:14px">下月重点</div>
+      <div class="r-row">① 优先清理 TM 60 天以上高风险积压（1,273 单）；② 维持 AF 60 天以内积压控制；③ 保障新增积压 T 日清零。</div>
     </div>
   </div>
 
